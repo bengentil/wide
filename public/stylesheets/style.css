@@ -1,0 +1,198 @@
+/*
+@import url('http://fonts.googleapis.com/css?family=Quicksand')
+*/
+/* CSS reset using NIB */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  background: #eee;
+  color: #222;
+}
+h1 {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #999;
+}
+h3 {
+  color: #c88;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+#preview {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: #999;
+  font-size: 0.9em;
+  width: 100px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+#editor {
+  position: absolute;
+  top: 12px;
+  right: 300px;
+  color: #999;
+  font-size: 0.9em;
+  width: 100px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+header {
+  position: absolute;
+  -webkit-user-select: none;
+  width: 100%;
+  min-width: 960px;
+  height: 27px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+span#copy {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 180px;
+  color: #999;
+  font-size: 0.9em;
+}
+#container {
+  position: absolute;
+  -webkit-user-select: none;
+  background-color: #fff;
+  outline: transparent;
+  top: 33px;
+  left: 0px;
+  right: 401px;
+  bottom: 0px;
+}
+iframe#content {
+  width: 100%;
+  height: 100%;
+}
+#sidebar {
+  position: absolute;
+  -webkit-user-select: none;
+  right: 0px;
+  top: 32px;
+  bottom: 0px;
+  width: 400px;
+  border-left: 1px solid #ccc;
+}
+.panel {
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+.errors {
+  font-size: 0.8em;
+  color: #f00;
+  padding-left: 5px;
+}
+.editor {
+  left: -1px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+}

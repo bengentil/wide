@@ -1,0 +1,48 @@
+!!! 5
+html(lang="en")
+	head
+		title=pageTitle
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src='http://code.jquery.com/jquery-1.9.0.min.js')
+		script(src='/socket.io/socket.io.js')
+	body
+		header
+			h3#preview Preview
+			h1=pageTitle
+			h3#editor Editor
+			span#copy &copy 2013 Benjamin Gentil
+		#container
+			iframe#content(seamless)
+		#sidebar
+			.panel
+				h3 index.jade
+				pre#jade-error.errors
+				#jade.editor !!! 5
+					| html
+					|     head
+					|         title Hello world
+					|         link(href="style.css")
+					|         script(src="/js/ace/ace.js")
+					|     body
+					|         #editor func main {
+					|             |	println("Hello world\n");	
+					|             |	}
+					|         script(src="main.js")
+			.panel
+				h3 style.styl
+				pre#stylus-error.errors
+				#stylus.editor #editor
+					|     margin-left 15px
+					|     margin-top 15px
+					|     width 1000px
+					|     height 400px
+			.panel
+				h3 main.js
+				pre#js-error.errors
+				#js.editor var editor = ace.edit("editor");
+					| editor.setTheme("ace/theme/monokai");
+					| editor.getSession().setMode("ace/mode/golang");
+			
+		script(src='/js/ace/ace.js')
+		//script(src='/js/require.js')
+		script(src='/js/fastweb.js')
