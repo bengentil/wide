@@ -14,7 +14,8 @@ var express = require('express')
     , fs = require('fs');
 //    , io = require('socket.io').listen(server);
 
-server.listen(3000);
+var port = process.env.PORT || 5000;
+server.listen(port);
 
 // Jade
 app.set('views', __dirname + '/views');
